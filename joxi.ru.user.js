@@ -11,8 +11,8 @@
 //location.href = document.getElementById('image').src;
 
 $(function(){
-  var src = $('.tile-image').find('img')[0].src;
+	var src = $('.tile-image').find('img')[0].src;
 //    console.log(img);
-  location.href = src;
-  //location.href = 'http://joxi.ru/' + img.src;
+    location.href = src;                
+	//location.href = 'http://joxi.ru/' + img.src;                
 });

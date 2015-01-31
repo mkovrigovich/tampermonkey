@@ -8,6 +8,6 @@
 // ==/UserScript==
 
 window.addEventListener('load', function () {
-  $('td.tCenter.w100').remove();
-  $('iframe').remove();
+    $('td.tCenter.w100').remove();
+    $('iframe').remove();
 });
