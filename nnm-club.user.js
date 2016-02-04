@@ -21,3 +21,22 @@ window.addEventListener('load', function () {
     jQuery('.header .row2').remove();
     jQuery('#mb_top_space').remove();
 });
+
+function clearIt(items)
+{
+    do {
+        var len = items.length;
+   
+        for(var i in items) {
+            if (items.hasOwnProperty(i)) {
+                items[i].parentNode.removeChild(items[i]);
+            }
+        }
+    } while (len);
+}
+
+
+clearIt(document.getElementsByTagName('iframe'));
+clearIt(document.getElementsByClassName('DA-BLOCK'));
+clearIt(document.getElementsByClassName('kdmTeaserBlock'));
+
